@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.amphibianapp.ui.screen.AmphibianViewModel
 import com.example.amphibianapp.ui.screen.HomeScreen
 import com.example.amphibianapp.ui.theme.AmphibianAppTheme
 
@@ -20,7 +22,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomeScreen()
+                    val amphibianViewModel : AmphibianViewModel = viewModel(
+                        factory = AmphibianViewModel.Factory
+                    )
+                    HomeScreen(amphibianUiState = amphibianViewModel.amphibianUiState)
                 }
             }
         }
