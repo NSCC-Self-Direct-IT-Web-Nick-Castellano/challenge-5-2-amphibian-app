@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">AmphibianApp</string>
+    <string name="app_name">Amphibians</string>
+    <string name="loading">Loading...</string>
+    <string name="fetch_error">Failed to fetch data</string>
+    <string name="retry">Retry</string>
+    <string name="amphibians_photo">Amphibian Photo</string>
+
 </resources>
