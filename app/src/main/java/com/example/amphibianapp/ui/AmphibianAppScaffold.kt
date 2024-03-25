@@ -23,9 +23,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.amphibianapp.R
 import com.example.amphibianapp.ui.screen.AmphibianViewModel
 import com.example.amphibianapp.ui.screen.HomeScreen
+import com.example.amphibianapp.R
 
 @ExperimentalMaterial3Api
 @Composable
